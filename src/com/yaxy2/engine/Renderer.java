@@ -90,10 +90,53 @@ public class Renderer {
 			}
 		
 		}
-		
 	}
+		
+	public void rainbow(int y_offset, double y_stretch) {
+		
+			
+		
+		
+		int height = (int) ((GameAttributes.RESOLUTION_HEIGHT * GameAttributes.RESOLUTION_SCALE) * y_stretch);
+		int parts = height / 2;
+		
+		
+		
+			for(int j = 0; j < parts; j++) {
+				for(int i = 0; i < p[0].length; i++) {
+			
+					int red = (int) (255 - (255 / parts) * j) & 0xffffff;
+					int green = (int) ((255 / parts) * j) & 0xffffff;
+					int blue = 0 & 0xffffff; 
+				
+					red <<=16;
+					green <<=8;
+				
+					int color = red | green | blue;
+					
+					p[j+y_offset][i] = color;
+				}
+			}
+			
+			for(int j = 0; j < parts; j++) {
+				for(int i = 0; i < p[0].length; i++) {
+			
+					int red = 0 & 0xffffff;
+					int green = (int) (255 - (255 / parts) * j) & 0xffffff;
+					int blue = (int) ((255 / parts) * j) & 0xffffff;
+				
+					green <<=8;
+					
+				
+					int color = red | green | blue;
+					
+					p[j+y_offset+parts][i] = color;
+				}
+			}
+			
+		
 			
 			
-	
+	}
 	
 }

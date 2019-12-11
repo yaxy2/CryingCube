@@ -4,7 +4,7 @@ public abstract class GameAttributes {
 
 	
 	// Framerate in FRAMERATE frames per second
-	public static final double FRAMERATE = 25.0;
+	public static final double FRAMERATE = 60.0;
 	
 	
 	public static final String GAME_TITLE = "JnR | Crying Cube - Have Fun!";
@@ -14,6 +14,6 @@ public abstract class GameAttributes {
 			
 	public static final int RESOLUTION_HEIGHT = 240;
 	
-	public static final float RESOLUTION_SCALE = 4f; 
+	public static final float RESOLUTION_SCALE = 2f; 
 	
 }
