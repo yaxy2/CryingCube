@@ -79,7 +79,8 @@ public class GameContainer implements Runnable {
 				//////////////////////////////////////////////////////////////////
 				
 				gameWindow.update(r.getP(),fps);
-				r.rainbow(0, 0.5);
+				//r.rainbow(0, 0.5);
+				r.lsd();
 				
 				
 				/////////////////////////////////////////////////////////////////

@@ -14,6 +14,6 @@ public abstract class GameAttributes {
 			
 	public static final int RESOLUTION_HEIGHT = 240;
 	
-	public static final float RESOLUTION_SCALE = 2f; 
+	public static final float RESOLUTION_SCALE = 5f; 
 	
 }
